@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Student Management System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h2 id="form-title">Add New Student</h2>
+
+<form id="studentForm">
+    <input type="text" id="studentId" placeholder="Student ID">
+    <input type="text" id="studentName" placeholder="Student Name">
+    <input type="text" id="studentClass" placeholder="Class">
+    <input type="number" id="studentMarks" placeholder="Marks">
+    
+    <button type="submit" id="submitBtn">Add Student</button>
+    <button type="button" id="cancelBtn" style="display:none;">Cancel</button>
+</form>
+
+<hr>
+
+<input type="text" id="searchInput" placeholder="Search by ID or Name">
+
+<p>Total Students: <span id="totalStudents">0</span></p>
+<p id="noRecords" style="display:none;">No records found</p>
+
+<table border="1">
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Class</th>
+            <th>Marks</th>
+            <th>Grade</th>
+            <th>Action</th>
+        </tr>
+    </thead>
+    <tbody id="tableBody"></tbody>
+</table>
+
+<script src="script.js"></script>
+</body>
+</html>
